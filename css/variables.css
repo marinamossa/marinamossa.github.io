@@ -1,0 +1,12 @@
+:root {
+	--font-size-h1: 52px;
+	--font-size-h2: 48px;
+	--font-size-h3: 32px;
+	--font-size-p: 16px;
+	--line-height-p: 140%;
+	--font-weight-p: 400;
+	--primary-background: #090e16;
+	--primary-text: rgba(255, 255, 255, 0.5);
+	--accent-color-main: #7b4ae2;
+	--accent-color-second: #c83267;
+}
