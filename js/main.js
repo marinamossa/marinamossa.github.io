@@ -1,7 +1,11 @@
 //мобильное меню и запрет скролла контента при его открытии
 document.querySelector('#burger').onclick = function () {
-	document.getElementById('header_menu').classList.toggle('burger-click')
-	document.getElementById('burger').classList.toggle('active')
+	if (document.querySelector('.popup-open')) {
+	} else {
+		document.getElementById('header_menu').classList.toggle('burger-click')
+		document.getElementById('burger').classList.toggle('active')
+		document.getElementById('body').classList.toggle('fixed')
+	}
 }
 
 // добавление бордера хедеру при скролле

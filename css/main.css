@@ -547,7 +547,7 @@
 }
 
 .skills__list img:hover {
-	transform: scale(1.5);
+	transform: scale(1.2);
 }
 
 @media (max-width: 767px) {
@@ -574,9 +574,6 @@
 
 .portfolio__inner > *:not(:last-child) {
 	margin: 0 0 2rem 0;
-}
-
-.skills__title {
 }
 
 .portfolio__list {
