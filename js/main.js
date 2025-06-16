@@ -66,3 +66,39 @@ scrollUp.addEventListener('click', () => {
 		behavior: 'smooth',
 	})
 })
+
+//click by menu link
+
+const menuLink = document.querySelectorAll('.menu__link')
+
+for (let i = 0; i < menuLink.length; i++) {
+	menuLink[i].addEventListener('click', function () {
+		document.getElementById('header_menu').classList.remove('burger-click')
+		document.getElementById('burger').classList.remove('active')
+		document.getElementById('body').classList.remove('fixed')
+	})
+}
+
+//parallax
+function parallax(event) {
+	this.querySelectorAll('.parallax-shape').forEach(shape => {
+		let speed = shape.getAttribute('data-speed')
+		shape.style.transform =
+			`translateX(${(event.clientX * speed) / 500}px)` +
+			`translateY(${(event.clientY * speed) / 500}px)`
+	})
+}
+
+document.addEventListener('mousemove', parallax)
+
+function parallaxMinus(event) {
+	this.querySelectorAll('.shape-minus').forEach(shape => {
+		let speed = shape.getAttribute('data-speed')
+		shape.style.transform =
+			`translateX(${(event.clientX * speed) / -500}px)` +
+			`translateY(${(event.clientY * speed) / -500}px)`
+	})
+}
+
+document.addEventListener('mousemove', parallaxMinus)
+console.log('speed=' + speed)
