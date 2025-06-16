@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Document</title>
 		<script async src="js/main.js"></script>
+		<script defer src="js/star-parallax.js"></script>
 	</head>
 	<body id="body">
 		<div class="wrapper">
@@ -83,20 +84,22 @@
 				</div>
 			</header>
 			<main class="main-page">
+				<div id="star-container"></div>
 				<section class="main-banner" id="home">
+					<div id="star-container"></div>
 					<div class="container">
 						<div class="main-banner__inner">
 							<div class="main-banner__content">
 								<div class="section-mini-title"><span>Hello!</span></div>
 								<h1 class="main-banner__title">Marina Mossa</h1>
-								<span class="main-banner__text"> Front-end developer </span>
+								<span class="main-banner__text"> Web developer </span>
 								<span class="main-banner__text"> Wordpress specialist </span>
 							</div>
 							<div class="main-banner__image">
 								<img
-									src="img/banner-avatar.png"
+									src="img/new-banner-avatar.png"
 									alt="main-photo"
-									height="400" />
+									height="350" />
 								<div class="banner-decor__wrp bdecor-wrp-1">
 									<svg
 										width="64"
@@ -196,6 +199,32 @@
 				</section>
 
 				<section class="skills" id="skills">
+					<div class="parallax container">
+						<div
+							data-speed="40"
+							class="parallax-shape shape-minus shape1"></div>
+						<div
+							data-speed="40"
+							class="parallax-shape shape-minus shape2"></div>
+						<div
+							data-speed="40"
+							class="parallax-shape shape-minus shape3"></div>
+						<div data-speed="40" class="parallax-shape shape4"></div>
+						<div data-speed="40" class="parallax-shape shape5"></div>
+						<div data-speed="40" class="parallax-shape shape6"></div>
+						<div
+							data-speed="40"
+							class="parallax-shape shape-minus shape7"></div>
+						<div data-speed="40" class="parallax-shape shape8"></div>
+						<div
+							data-speed="40"
+							class="parallax-shape shape-minus shape9"></div>
+						<div
+							data-speed="40"
+							class="parallax-shape shape-minus shape10"></div>
+						<div data-speed="40" class="parallax-shape shape11"></div>
+						<div data-speed="40" class="parallax-shape shape12"></div>
+					</div>
 					<div class="container">
 						<div class="skills__inner">
 							<div class="section-mini-title">What I use</div>
@@ -217,99 +246,321 @@
 					<div class="container">
 						<div class="portfolio__inner">
 							<div class="section-mini-title">Portfolio</div>
-							<h2 class="portfolio__title">Gallery, links & video</h2>
+							<h2 class="portfolio__title">Gallery, links and video</h2>
 							<div class="portfolio__list">
-								<div class="portfolio__item">
-									<h4 class="portfolio__item-title">Dentalist</h4>
+								<div
+									class="portfolio__item"
+									style="
+										background-image: linear-gradient(
+												rgba(0, 0, 0, 0.2),
+												rgba(0, 0, 0, 0.7)
+											),
+											url(img/velvet-clouds-screenshot.jpeg);
+									">
+									<h4 class="portfolio__item-title">Velvet Cloud Event</h4>
 									<p class="portfolio__item-about">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
 										adipisci expedita quo, dolorum facilis minus.
 									</p>
-									<a
-										href="#"
-										class="portfolio__item-link main-btn-medium-color">
-										<span class="btn-text">View site</span>
-										<span class="btn-icon">
+									<div class="portfolio__item-link-wrp">
+										<a
+											href="img/velvet-clouds-screenshot.jpeg"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">Screen</span>
+
 											<svg
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												class="btn-icon-eye"
+												version="1.0"
+												xmlns="http://www.w3.org/2000/svg"
+												width="25"
+												height="25"
+												viewBox="0 0 225.000000 225.000000"
+												preserveAspectRatio="xMidYMid meet">
+												<g
+													transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)">
+													<path
+														d="M1090 2057 c-22 -11 -26 -21 -31 -77 -4 -36 -7 -102 -8 -147 l-1 -82
+-57 -11 c-32 -6 -64 -12 -72 -13 -9 -1 -28 40 -56 122 -23 67 -48 127 -56 132
+-8 5 -30 8 -49 7 -25 -2 -38 -10 -49 -30 -14 -24 -12 -35 23 -153 21 -69 36
+-128 35 -129 -10 -9 -130 -66 -138 -66 -5 0 -33 38 -62 85 -61 101 -91 135
+-117 135 -30 0 -72 -38 -72 -66 0 -13 29 -72 65 -129 36 -58 65 -107 65 -109
+0 -2 -27 -28 -60 -56 l-61 -53 -57 64 c-120 135 -149 152 -192 109 -38 -38
+-26 -67 65 -174 46 -55 81 -104 78 -110 -4 -6 -31 -43 -60 -82 -70 -93 -133
+-216 -133 -258 0 -109 221 -402 411 -546 339 -255 674 -302 1018 -144 300 138
+640 504 641 691 0 53 -58 169 -140 277 l-59 79 32 37 c18 21 53 62 79 92 61
+69 68 99 34 132 -43 43 -62 35 -158 -66 -97 -103 -84 -101 -172 -25 l-39 34
+67 111 c61 98 67 114 59 139 -14 40 -53 61 -87 45 -22 -10 -135 -167 -149
+-207 -5 -14 -147 56 -147 73 0 7 16 65 35 128 38 125 36 151 -11 173 -57 26
+-87 -12 -134 -172 -13 -43 -27 -80 -31 -83 -4 -2 -40 1 -78 7 l-71 12 0 134
+c0 129 -1 135 -25 158 -27 28 -39 30 -75 12z m185 -562 c88 -23 232 -96 322
+-164 88 -66 242 -222 292 -295 18 -26 34 -59 34 -73 0 -36 -61 -117 -170 -227
+-312 -314 -622 -393 -933 -237 -108 54 -196 119 -308 226 -105 100 -182 200
+-182 236 0 48 102 174 230 287 147 130 283 209 423 247 70 19 219 19 292 0z" />
+													<path
+														class="pupil"
+														d="M1008 1371 c-207 -66 -334 -266 -298 -470 24 -138 112 -255 237 -314
+64 -30 75 -32 178 -32 103 0 114 2 178 32 260 123 324 459 127 667 -110 117
+-277 163 -422 117z"
+														fill="transparent" />
+												</g>
 											</svg>
-										</span>
-									</a>
+										</a>
+										<a
+											href="https://x5c.ru/"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">View site</span>
+											<span class="btn-icon">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												</svg>
+											</span>
+										</a>
+									</div>
 								</div>
-								<div class="portfolio__item">
-									<h4 class="portfolio__item-title">Dentalist</h4>
+								<div
+									class="portfolio__item"
+									style="
+										background-image: linear-gradient(
+												rgba(0, 0, 0, 0.2),
+												rgba(0, 0, 0, 0.7)
+											),
+											url(img/dubai-screenshot.jpeg);
+									">
+									<h4 class="portfolio__item-title">Dubai Realty</h4>
 									<p class="portfolio__item-about">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
 										adipisci expedita quo, dolorum facilis minus.
 									</p>
-									<a
-										href="#"
-										class="portfolio__item-link main-btn-medium-color">
-										<span class="btn-text">View site</span>
-										<span class="btn-icon">
+
+									<div class="portfolio__item-link-wrp">
+										<a
+											href="img/dubai-screenshot.jpeg"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">Screen</span>
+
 											<svg
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												class="btn-icon-eye"
+												version="1.0"
+												xmlns="http://www.w3.org/2000/svg"
+												width="25"
+												height="25"
+												viewBox="0 0 225.000000 225.000000"
+												preserveAspectRatio="xMidYMid meet">
+												<g
+													transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)">
+													<path
+														d="M1090 2057 c-22 -11 -26 -21 -31 -77 -4 -36 -7 -102 -8 -147 l-1 -82
+-57 -11 c-32 -6 -64 -12 -72 -13 -9 -1 -28 40 -56 122 -23 67 -48 127 -56 132
+-8 5 -30 8 -49 7 -25 -2 -38 -10 -49 -30 -14 -24 -12 -35 23 -153 21 -69 36
+-128 35 -129 -10 -9 -130 -66 -138 -66 -5 0 -33 38 -62 85 -61 101 -91 135
+-117 135 -30 0 -72 -38 -72 -66 0 -13 29 -72 65 -129 36 -58 65 -107 65 -109
+0 -2 -27 -28 -60 -56 l-61 -53 -57 64 c-120 135 -149 152 -192 109 -38 -38
+-26 -67 65 -174 46 -55 81 -104 78 -110 -4 -6 -31 -43 -60 -82 -70 -93 -133
+-216 -133 -258 0 -109 221 -402 411 -546 339 -255 674 -302 1018 -144 300 138
+640 504 641 691 0 53 -58 169 -140 277 l-59 79 32 37 c18 21 53 62 79 92 61
+69 68 99 34 132 -43 43 -62 35 -158 -66 -97 -103 -84 -101 -172 -25 l-39 34
+67 111 c61 98 67 114 59 139 -14 40 -53 61 -87 45 -22 -10 -135 -167 -149
+-207 -5 -14 -147 56 -147 73 0 7 16 65 35 128 38 125 36 151 -11 173 -57 26
+-87 -12 -134 -172 -13 -43 -27 -80 -31 -83 -4 -2 -40 1 -78 7 l-71 12 0 134
+c0 129 -1 135 -25 158 -27 28 -39 30 -75 12z m185 -562 c88 -23 232 -96 322
+-164 88 -66 242 -222 292 -295 18 -26 34 -59 34 -73 0 -36 -61 -117 -170 -227
+-312 -314 -622 -393 -933 -237 -108 54 -196 119 -308 226 -105 100 -182 200
+-182 236 0 48 102 174 230 287 147 130 283 209 423 247 70 19 219 19 292 0z" />
+													<path
+														class="pupil"
+														d="M1008 1371 c-207 -66 -334 -266 -298 -470 24 -138 112 -255 237 -314
+64 -30 75 -32 178 -32 103 0 114 2 178 32 260 123 324 459 127 667 -110 117
+-277 163 -422 117z"
+														fill="transparent" />
+												</g>
 											</svg>
-										</span>
-									</a>
+										</a>
+
+										<a
+											href="https://9zz.ru/"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">View site</span>
+											<span class="btn-icon">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												</svg>
+											</span>
+										</a>
+									</div>
 								</div>
-								<div class="portfolio__item">
+								<div
+									class="portfolio__item"
+									style="
+										background-image: linear-gradient(
+												rgba(0, 0, 0, 0.2),
+												rgba(0, 0, 0, 0.7)
+											),
+											url(img/dentalist-screenshot.jpeg);
+									">
 									<h4 class="portfolio__item-title">Dentalist</h4>
 									<p class="portfolio__item-about">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
 										adipisci expedita quo, dolorum facilis minus.
 									</p>
-									<a
-										href="#"
-										class="portfolio__item-link main-btn-medium-color">
-										<span class="btn-text">View site</span>
-										<span class="btn-icon">
+
+									<div class="portfolio__item-link-wrp">
+										<a
+											href="img/dentalist-screenshot.jpeg"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">Screen</span>
+
 											<svg
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												class="btn-icon-eye"
+												version="1.0"
+												xmlns="http://www.w3.org/2000/svg"
+												width="25"
+												height="25"
+												viewBox="0 0 225.000000 225.000000"
+												preserveAspectRatio="xMidYMid meet">
+												<g
+													transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)">
+													<path
+														d="M1090 2057 c-22 -11 -26 -21 -31 -77 -4 -36 -7 -102 -8 -147 l-1 -82
+-57 -11 c-32 -6 -64 -12 -72 -13 -9 -1 -28 40 -56 122 -23 67 -48 127 -56 132
+-8 5 -30 8 -49 7 -25 -2 -38 -10 -49 -30 -14 -24 -12 -35 23 -153 21 -69 36
+-128 35 -129 -10 -9 -130 -66 -138 -66 -5 0 -33 38 -62 85 -61 101 -91 135
+-117 135 -30 0 -72 -38 -72 -66 0 -13 29 -72 65 -129 36 -58 65 -107 65 -109
+0 -2 -27 -28 -60 -56 l-61 -53 -57 64 c-120 135 -149 152 -192 109 -38 -38
+-26 -67 65 -174 46 -55 81 -104 78 -110 -4 -6 -31 -43 -60 -82 -70 -93 -133
+-216 -133 -258 0 -109 221 -402 411 -546 339 -255 674 -302 1018 -144 300 138
+640 504 641 691 0 53 -58 169 -140 277 l-59 79 32 37 c18 21 53 62 79 92 61
+69 68 99 34 132 -43 43 -62 35 -158 -66 -97 -103 -84 -101 -172 -25 l-39 34
+67 111 c61 98 67 114 59 139 -14 40 -53 61 -87 45 -22 -10 -135 -167 -149
+-207 -5 -14 -147 56 -147 73 0 7 16 65 35 128 38 125 36 151 -11 173 -57 26
+-87 -12 -134 -172 -13 -43 -27 -80 -31 -83 -4 -2 -40 1 -78 7 l-71 12 0 134
+c0 129 -1 135 -25 158 -27 28 -39 30 -75 12z m185 -562 c88 -23 232 -96 322
+-164 88 -66 242 -222 292 -295 18 -26 34 -59 34 -73 0 -36 -61 -117 -170 -227
+-312 -314 -622 -393 -933 -237 -108 54 -196 119 -308 226 -105 100 -182 200
+-182 236 0 48 102 174 230 287 147 130 283 209 423 247 70 19 219 19 292 0z" />
+													<path
+														class="pupil"
+														d="M1008 1371 c-207 -66 -334 -266 -298 -470 24 -138 112 -255 237 -314
+64 -30 75 -32 178 -32 103 0 114 2 178 32 260 123 324 459 127 667 -110 117
+-277 163 -422 117z"
+														fill="transparent" />
+												</g>
 											</svg>
-										</span>
-									</a>
+										</a>
+
+										<a
+											href="https://nd2.ru/"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">View site</span>
+											<span class="btn-icon">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												</svg>
+											</span>
+										</a>
+									</div>
 								</div>
-								<div class="portfolio__item">
-									<h4 class="portfolio__item-title">Dentalist</h4>
+								<div
+									class="portfolio__item"
+									style="
+										background-image: linear-gradient(
+												rgba(0, 0, 0, 0.2),
+												rgba(0, 0, 0, 0.7)
+											),
+											url(img/mntn-screenshot.jpeg);
+									">
+									<h4 class="portfolio__item-title">Mountain hiking</h4>
 									<p class="portfolio__item-about">
 										Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
 										adipisci expedita quo, dolorum facilis minus.
 									</p>
-									<a
-										href="#"
-										class="portfolio__item-link main-btn-medium-color">
-										<span class="btn-text">View site</span>
-										<span class="btn-icon">
+
+									<div class="portfolio__item-link-wrp">
+										<a
+											href="img/mntn-screenshot.jpeg"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">Screen</span>
+
 											<svg
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												xmlns="http://www.w3.org/2000/svg">
-												<path
-													d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												class="btn-icon-eye"
+												version="1.0"
+												xmlns="http://www.w3.org/2000/svg"
+												width="25"
+												height="25"
+												viewBox="0 0 225.000000 225.000000"
+												preserveAspectRatio="xMidYMid meet">
+												<g
+													transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)">
+													<path
+														d="M1090 2057 c-22 -11 -26 -21 -31 -77 -4 -36 -7 -102 -8 -147 l-1 -82
+-57 -11 c-32 -6 -64 -12 -72 -13 -9 -1 -28 40 -56 122 -23 67 -48 127 -56 132
+-8 5 -30 8 -49 7 -25 -2 -38 -10 -49 -30 -14 -24 -12 -35 23 -153 21 -69 36
+-128 35 -129 -10 -9 -130 -66 -138 -66 -5 0 -33 38 -62 85 -61 101 -91 135
+-117 135 -30 0 -72 -38 -72 -66 0 -13 29 -72 65 -129 36 -58 65 -107 65 -109
+0 -2 -27 -28 -60 -56 l-61 -53 -57 64 c-120 135 -149 152 -192 109 -38 -38
+-26 -67 65 -174 46 -55 81 -104 78 -110 -4 -6 -31 -43 -60 -82 -70 -93 -133
+-216 -133 -258 0 -109 221 -402 411 -546 339 -255 674 -302 1018 -144 300 138
+640 504 641 691 0 53 -58 169 -140 277 l-59 79 32 37 c18 21 53 62 79 92 61
+69 68 99 34 132 -43 43 -62 35 -158 -66 -97 -103 -84 -101 -172 -25 l-39 34
+67 111 c61 98 67 114 59 139 -14 40 -53 61 -87 45 -22 -10 -135 -167 -149
+-207 -5 -14 -147 56 -147 73 0 7 16 65 35 128 38 125 36 151 -11 173 -57 26
+-87 -12 -134 -172 -13 -43 -27 -80 -31 -83 -4 -2 -40 1 -78 7 l-71 12 0 134
+c0 129 -1 135 -25 158 -27 28 -39 30 -75 12z m185 -562 c88 -23 232 -96 322
+-164 88 -66 242 -222 292 -295 18 -26 34 -59 34 -73 0 -36 -61 -117 -170 -227
+-312 -314 -622 -393 -933 -237 -108 54 -196 119 -308 226 -105 100 -182 200
+-182 236 0 48 102 174 230 287 147 130 283 209 423 247 70 19 219 19 292 0z" />
+													<path
+														class="pupil"
+														d="M1008 1371 c-207 -66 -334 -266 -298 -470 24 -138 112 -255 237 -314
+64 -30 75 -32 178 -32 103 0 114 2 178 32 260 123 324 459 127 667 -110 117
+-277 163 -422 117z"
+														fill="transparent" />
+												</g>
 											</svg>
-										</span>
-									</a>
+										</a>
+
+										<a
+											href="https://mintu.ru/"
+											target="_blank"
+											class="portfolio__item-link main-btn-medium-color">
+											<span class="btn-text">View site</span>
+											<span class="btn-icon">
+												<svg
+													width="24"
+													height="24"
+													viewBox="0 0 24 24"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z" />
+												</svg>
+											</span>
+										</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -467,7 +718,7 @@
 							</a>
 						</div>
 						<div class="main-footer__copyright">
-							<p>Copyright &copy; 2024</p>
+							<p>All rights reserved &copy;</p>
 						</div>
 					</div>
 				</div>
