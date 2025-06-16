@@ -34,7 +34,7 @@ body.fixed {
 }
 
 h1 {
-	font-family: 'Raleway-Bold', 'Arial', sans-serif;
+	font-family: 'SpaceGrotesk-Bold', 'Arial', sans-serif;
 	font-size: 52px;
 	font-weight: 800;
 	line-height: 61px;
@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Raleway-Bold', 'Arial', sans-serif;
+	font-family: 'SpaceGrotesk-Bold', 'Arial', sans-serif;
 	font-size: 48px;
 	font-weight: 800;
 	line-height: 56px;
@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Raleway-Bold', 'Arial', sans-serif;
+	font-family: 'SpaceGrotesk-Bold', 'Arial', sans-serif;
 	font-size: 32px;
 	font-weight: 800;
 	line-height: 38px;
@@ -58,7 +58,7 @@ h3 {
 }
 
 h4 {
-	font-family: 'Raleway-Bold', 'Arial', sans-serif;
+	font-family: 'SpaceGrotesk-Bold', 'Arial', sans-serif;
 	font-size: 24px;
 	font-weight: 800;
 	line-height: 115%;
@@ -68,7 +68,7 @@ h4 {
 .section-mini-title {
 	display: inline-block;
 	padding: 15px 20px;
-	font-family: 'Raleway-Bold', 'Arial', sans-serif;
+	font-family: 'SpaceGrotesk-Bold', 'Arial', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
 	color: var(--accent-color-main, #7b4ae2);
@@ -153,9 +153,9 @@ h4 {
 
 .main-btn-medium-color {
 	display: inline-block;
-	padding: 12px 20px;
+	padding: 12px;
 	font-family: 'Raleway-Bold', 'Arial', sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 700;
 	line-height: 150%;
 	color: #fff;
@@ -172,4 +172,11 @@ h4 {
 
 .main-btn-medium-color:active {
 	transform: scale(1);
+}
+
+@media (max-width: 480px) {
+	.main-btn-medium-color {
+		padding: 8px;
+		font-size: 14px;
+	}
 }

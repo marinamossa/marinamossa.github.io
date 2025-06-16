@@ -17,3 +17,20 @@
 	font-family: 'Raleway-Medium';
 	src: url(../fonts/Raleway-Medium.ttf);
 }
+
+@font-face {
+	font-family: 'SpaceGrotesk-Regular';
+	src: url(../fonts/Space_Grotesk/SpaceGrotesk-Regular.ttf);
+}
+@font-face {
+	font-family: 'SpaceGrotesk-Medium';
+	src: url(../fonts/Space_Grotesk/SpaceGrotesk-Medium.ttf);
+}
+@font-face {
+	font-family: 'SpaceGrotesk-SemiBold';
+	src: url(../fonts/Space_Grotesk/SpaceGrotesk-SemiBold.ttf);
+}
+@font-face {
+	font-family: 'SpaceGrotesk-Bold';
+	src: url(../fonts/Space_Grotesk/SpaceGrotesk-Bold.ttf);
+}
