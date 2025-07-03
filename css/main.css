@@ -286,8 +286,10 @@
 .main-banner__image img {
 	position: relative;
 	z-index: 1;
-	width: 100%;
-	max-width: 510px;
+	display: block;
+	margin: 0 auto;
+	/*width: 100%;*/
+	max-width: 400px;
 	-o-object-position: center;
 	object-position: center;
 	-o-object-fit: contain;
@@ -318,6 +320,7 @@
 	width: 35px;
 	height: 35px;
 	fill: #7b4ae2;
+	stroke: #7b4ae2;
 	fill-opacity: 0.5;
 	-webkit-transition: all 3s ease;
 	-o-transition: all 3s ease;
@@ -325,16 +328,16 @@
 }
 
 .bdecor-wrp-1 {
-	top: 80px;
-	left: 10px;
+	top: 40px;
+	left: -12px;
 }
 .bdecor-wrp-2 {
-	top: 210px;
-	right: 30px;
+	bottom: 50px;
+	right: -15px;
 }
 .bdecor-wrp-3 {
 	bottom: 50px;
-	left: 30px;
+	left: 50px;
 }
 
 /*animation decor*/
@@ -420,9 +423,9 @@
 .banner-decor__bg-decor {
 	position: absolute;
 	z-index: 0;
-	top: 0;
+	top: -25px;
 	left: calc((100% - 330px) / 2);
-	width: 330px;
+	width: 334px;
 	height: 330px;
 	border-radius: 50%;
 	background: -o-linear-gradient(left, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -490,7 +493,7 @@
 		display: none;
 	}
 	.banner-decor__bg-decor {
-		top: 40px;
+		top: 20px;
 		left: calc((100% - 250px) / 2);
 		width: 250px;
 		height: 250px;
@@ -555,7 +558,7 @@
 	.main-banner__image {
 		position: absolute;
 		z-index: 0;
-		top: 100px;
+		top: 130px;
 	}
 
 	.main-banner__connect {
@@ -570,7 +573,6 @@
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
-		gap: 1rem;
 		padding: 0 0 3rem 0;
 	}
 	.main-banner__image {
@@ -629,7 +631,11 @@
 		width: 100%;
 	}
 }
-
+@media (max-width: 390px) {
+	.main-banner__image img {
+		max-width: 220px;
+	}
+}
 /*SKILLS*/
 .skills {
 	position: relative;
